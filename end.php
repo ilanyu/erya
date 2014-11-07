@@ -10,4 +10,4 @@ echo '$.getJSON(
        if (data.status == "1" || data.status == "4") window.close() ;
     }
 );';
-echo '$.getScript("http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] . '?videoId=" + document.getElementById("videoId").value + "&videoNumber=" + document.getElementById("videoNumber").value + "&courseId=" + document.getElementById("courseId").value + "&schoolCourseId=" + document.getElementById("schoolCourseId").value);';
+echo '$.getScript("http://' . $_SERVER["HTTP_HOST"] . '/end.php?videoId=" + document.getElementById("videoId").value + "&videoNumber=" + document.getElementById("videoNumber").value + "&courseId=" + document.getElementById("courseId").value + "&schoolCourseId=" + document.getElementById("schoolCourseId").value);';
